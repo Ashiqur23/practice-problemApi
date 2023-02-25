@@ -39,12 +39,12 @@ function loadData(person){
     const location2 = document.getElementById('location2');
     cardName.innerText =`Person Name: ${person.result[0].name.common}`
     age.innerText = `age ${person.result[0].age}`
-    location.innerText = `Street: ${person.result[0].address.street}`
+    location.innerText = `Street: ${person.result[0].address.street}, House : ${person.result[0].address.house}`
 
     // card 2
     cardName2.innerText =`Person Name: ${person.result[1].name.common}`
     age2.innerText = `age ${person.result[1].age}`
-    location2.innerText = `Street: ${person.result[1].address.street}`
+    location2.innerText = `Street: ${person.result[1].address.street}, House : ${person.result[1].address.house}`
 
 }
 loadData(person)
